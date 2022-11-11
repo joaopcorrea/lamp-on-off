@@ -9,8 +9,6 @@ body {
 
 body.light-on {
   background: #b1b1b1;
-  /* background: #ffffe0; */
-  /* animation: fadeIn .1s ease-out; */
 }
 
 body.light-off {
@@ -32,11 +30,9 @@ body.light-off {
   width: 10px;
   height: 100px;
   background: #2d2d2d;
-  /* pointer-events: none; */
 }
 
 .lamp-middle {
-  cursor: pointer;
   width: 50px;
   height: 30px;
   background: #2d2d2d;
@@ -45,7 +41,6 @@ body.light-off {
 }
 
 .lamp-bottom {
-  cursor: pointer;
   width: 150px;
   height: 80px;
   background: #2d2d2d;
@@ -55,14 +50,12 @@ body.light-off {
 
 .lamp-light.on {
   width: 700px;
-  height: 500px;
+  height: 900px;
   background-color: #fff69c;
-  /* background-color: #fefefe; */
   clip-path: polygon(
     40% 0, 60% 0, 80% 100%, 20% 100%
   );
   top: 200px;
-  pointer-events: none;
   animation: fadeIn .2s ease-out;
 }
 
