@@ -1,0 +1,86 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  overflow: hidden;
+}
+
+body.light-on {
+  background: #b1b1b1;
+  /* background: #ffffe0; */
+  /* animation: fadeIn .1s ease-out; */
+}
+
+body.light-off {
+  background: #4e4e4e;
+}
+
+.lamp {
+  animation:lamp 8s infinite;
+}
+
+.lamp-item {
+  position: absolute;
+  left: 0;
+  right: 0;
+  margin: auto;
+}
+
+.lamp-top {
+  width: 10px;
+  height: 100px;
+  background: #2d2d2d;
+  /* pointer-events: none; */
+}
+
+.lamp-middle {
+  cursor: pointer;
+  width: 50px;
+  height: 30px;
+  background: #2d2d2d;
+  top: 99px;
+  border-radius: 50px 50px 0 0;
+}
+
+.lamp-bottom {
+  cursor: pointer;
+  width: 150px;
+  height: 80px;
+  background: #2d2d2d;
+  border-radius: 100px 100px 0 0;
+  top: 120px;
+}
+
+.lamp-light.on {
+  width: 700px;
+  height: 500px;
+  background-color: #fff69c;
+  /* background-color: #fefefe; */
+  clip-path: polygon(
+    40% 0, 60% 0, 80% 100%, 20% 100%
+  );
+  top: 200px;
+  pointer-events: none;
+  animation: fadeIn .2s ease-out;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.lamp-light.off {
+  display: none;
+}
+
+@keyframes lamp {
+  0%{ transform:rotate(-20deg) }
+  50%{ transform:rotate(20deg) }
+  100%{ transform:rotate(-20deg) }
+}
